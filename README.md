@@ -1,6 +1,6 @@
 # Team_Intro - 팀원 정보 등록 웹 애플리케이션
 
-[👉 배포 링크 바로가기](https://xellos216.github.io/Team_Intro/)
+[👉 배포 링크 바로가기](https://minhyeongk.github.io/sparta_team_intro/)
 
 ---
 
