@@ -386,7 +386,10 @@
       let selectedMemberId = null;
 
       function showModal(member) {
-        const githubLink = member.github?.trim() || "";
+        const githubId = (member.github || "").trim();
+        const githubLink = githubId.startsWith("http")
+            ? githubId
+            : `https://github.com/${githubId}`;
         const targetModalHtml = `
       <div class="card-modal-backdrop">
         <div class="modal-content-custom">
