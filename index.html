@@ -386,10 +386,11 @@
       let selectedMemberId = null;
 
       function showModal(member) {
+        let githubId = (member.github || "").trim();
         if (!/^https?:\/\//i.test(githubId)) {
           githubId = githubId.replace(/^\.?\/*/, ""); // ./ 또는 / 제거
           githubId = `https://github.com/${githubId}`;
-          }
+        }
         const githubLink = githubId;
         const targetModalHtml = `
       <div class="card-modal-backdrop">
