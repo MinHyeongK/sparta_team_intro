@@ -387,7 +387,7 @@
 
       function showModal(member) {
         if (!/^https?:\/\//i.test(githubId)) {
-          // 아이디 형식만 들어왔을 때만 github.com 주소로 간주
+          // 아이디 형식만 들어왔을 때는 github.com 주소로 간주
           githubId = githubId.replace(/^\.?\/*/, ""); // 앞에 ./ 또는 / 제거
           githubId = `https://github.com/${githubId}`;
           }
