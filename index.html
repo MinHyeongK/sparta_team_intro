@@ -387,13 +387,10 @@
 
       function showModal(member) {
         if (!/^https?:\/\//i.test(githubId)) {
-          // 아이디 형식만 들어왔을 때는 github.com 주소로 간주
-          githubId = githubId.replace(/^\.?\/*/, ""); // 앞에 ./ 또는 / 제거
+          githubId = githubId.replace(/^\.?\/*/, ""); // ./ 또는 / 제거
           githubId = `https://github.com/${githubId}`;
           }
-        const githubLink = githubId.startsWith("http")
-            ? githubId
-            : `https://github.com/${githubId}`;
+        const githubLink = githubId;
         const targetModalHtml = `
       <div class="card-modal-backdrop">
         <div class="modal-content-custom">
